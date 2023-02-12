@@ -1,0 +1,193 @@
+body {
+  background-color: darkgrey;
+  font-family: "Kanit", sans-serif;
+}
+.logo-img {
+  min-height: 50px;
+  min-width: 50px;
+  max-width: 50px;
+  margin-left: 40px;
+}
+.header {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 80%;
+}
+.menu {
+  background-color: white;
+  display: flex;
+  padding: 30px 100px;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu-item {
+  margin-left: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "Kanit", sans-serif;
+  position: relative;
+}
+.menu-item-about {
+    margin-left: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-family: "Kanit", sans-serif;
+    position: relative;
+    text-align: left;
+  }
+
+.logo {
+  
+}
+
+.menu-item:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  content: "";
+  transition: width 0.5s ease-out;
+}
+.menu-item:hover:after,
+.menu-item:focus:after {
+  width: 100%;
+}
+
+.container-img {
+  width: 100%;
+  max-height: 320px;
+  border: 3px solid rgb(255, 255, 255);
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 80%;
+}
+.container-tittle {
+  font-size: 42px;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+}
+.container-text-main {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+  max-width: 400px;
+}
+.container-btn {
+  margin-top: 40px;
+}
+.buy-btn {
+  padding: 22px 26px;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(0, 0, 0);
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+  transition-duration: 0.5s;
+  margin-right: 30px;
+}
+.buy-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.learn-btn {
+  font-weight: 700;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  transition-duration: 0.5s;
+}
+.learn-btn:hover {
+  color: black;
+  font-size: 20px;
+}
+.container-right{
+    text-align: center;
+}
+.container-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.social-list {
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+.social-item {
+  font-size: 28px;
+
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  padding: 8px 14px;
+  color: white;
+  transition-duration: 0.5s;
+}
+.footer {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 30px 0px;
+  background-color: black;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.social-item:hover {
+  border-color: aquamarine;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.map {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.adress {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 300px;
+  margin-top: 20px;
+}
+.adress-title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.adress-main {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+iframe {
+  border-radius: 10px;
+}
+@media (min-width: 400px) {
+  iframe {
+    max-width: 90%;
+  }
+}
+@media (min-width: 400px) {
+  .container-img {
+    max-width: 90%;
+    border: 3px solid rgb(255, 255, 255);
+  }
+}

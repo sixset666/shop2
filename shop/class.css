@@ -1,0 +1,157 @@
+body {
+  background-color: darkgrey;
+  color: white;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  padding: 20px 100px;
+  background-color: black;
+  display: flex;
+  margin-top: 50px;
+}
+.logo {
+  margin-right: 100px;
+  transition-duration: 0.5s;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-item {
+  margin-left: 100px;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-family: "Kanit", sans-serif;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu-item:after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 3px; /*задаём ширину линии*/
+  background-color: #ffffff; /*задаём цвет линии*/
+  content: "";
+  transition: width 0.5s ease-out; /*задаём время анимации*/
+}
+
+.menu-item:hover:after,
+.menu-item:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.container-left {
+  margin-right: 310px;
+}
+.container-text {
+  margin-top: 50%;
+}
+
+.container-right {
+  display: flex;
+  align-items: center;
+}
+.container-img {
+  max-width: 550px;
+  max-height: 800px;
+}
+.container-text-tittle {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+}
+.container-text-tittle-main-text {
+  font-size: 32px;
+  max-width: 400px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.container-btn {
+  margin-top: 40px;
+}
+.buy-btn {
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.823);
+  color: white;
+  padding: 20px 26px;
+  font-family: "Kanit", sans-serif;
+  letter-spacing: 1px;
+  transition-duration: 0.5s;
+}
+.buy-btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.768);
+}
+.learn-btn {
+  letter-spacing: 1px;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  padding: 20px 26px;
+  transition-duration: 0.5s;
+}
+.learn-btn:hover {
+  color: black;
+  font-size: 20px;
+}
+.footer {
+  padding: 30px 0px;
+  background-color: black;
+  max-width: 1350px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.social-list {
+  display: flex;
+}
+.social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 50%;
+  border: 4px solid white;
+  width: 60px;
+  height: 60px;
+  font-size: 26px;
+  margin-right: 50px;
+  margin-left: 50px;
+  transition: 0.5s;
+}
+.twitch:hover {
+  border-color: rgb(104, 1, 104);
+  box-shadow: 0 0 10px rgb(104, 1, 104);
+}
+.whatsapp:hover {
+  border-color: rgb(2, 110, 7);
+  box-shadow: 0 0 10px rgb(1, 110, 6);
+}
+.facebook:hover {
+  border-color: rgb(5, 0, 145);
+  box-shadow: 0 0 10px rgb(5, 0, 145);
+}
+.vk:hover {
+  border-color: rgb(0, 68, 145);
+  box-shadow: 0 0 10px rgb(0, 68, 145);
+}
+.instagram:hover {
+  border-color: rgb(153, 113, 2);
+  box-shadow: 0 0 10px rgb(153, 113, 2);
+}

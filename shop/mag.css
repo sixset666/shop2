@@ -1,0 +1,82 @@
+body{
+  background-color: darkgrey;
+  font-family: 'Kanit', sans-serif;
+}
+.logo-img{
+  height: 50px;
+  width: 50px;
+}
+.menu{
+  background-color: rgb(252, 252, 252);
+  padding: 20px 70px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+.menu-list{
+  display: flex;
+}
+.menu-item{
+  margin-left: 60px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: 'Kanit', sans-serif;
+  position: relative;
+}
+.header{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  margin-right: 60px;
+}
+
+.menu-item:after{
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: black;
+  content: "";
+  transition: width 0.5s ease-out;
+}
+.menu-item:hover:after,
+.menu-item:focus:after{
+  width: 100%;
+}
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .social-list {
+    display: flex;
+  }
+  .social-item {
+      font-size: 28px;
+      margin: 0 40px 0 40px;
+      border: 4px solid rgb(255, 255, 255);
+      border-radius: 50%;
+      padding: 7px 14px;
+      color: white;
+      transition-duration: 0.5s;
+  }
+  .footer {
+      padding: 30px 0px;
+      background-color: black;
+      max-width: 1000px;
+      margin: 0 auto;
+      margin-top: 50px;
+  }
+  
+  .social-item:hover {
+    border-color: aquamarine;
+    box-shadow: 0 0 10px aquamarine;
+  }
+
+  
